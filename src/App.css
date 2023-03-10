@@ -1,0 +1,90 @@
+.App {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 2em;
+}
+
+h1 {
+  color: #ff0000;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+input {
+  flex: 1;
+  padding: .5em;
+  border-radius: .5em;
+  border: none;
+  margin-right: 1em;
+  font-size: 1em;
+}
+
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: .5em 1em;
+  border-radius: .5em;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  width: 80%;
+}
+
+.task-details {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+
+.task-details div {
+  display: flex;
+  align-items: center;
+}
+
+.task-details input[type="checkbox"] {
+  margin-right: 1em;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.task-details input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-details button {
+  background-color: #ff0000;
+  color: white;
+  padding: .5em;
+  border-radius: .5em;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.task-details button:hover {
+  background-color: #c80000;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    width: 100%;
+  }
+}
